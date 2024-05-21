@@ -1,0 +1,141 @@
+
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+   
+  }
+  
+  .container234 {
+    width: 320px;
+    height: 350px;
+    border: 1px solid black;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    opacity: 0.4;
+  }
+  
+  .image-wrapper img {
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .image-wrapper.left img {
+    width: 130px;
+    height: 180px;
+  }
+  
+  .image-wrapper.right {
+    align-self: center;
+    position: absolute;
+    top: 18%;
+    right: 35%;
+    transform: translateX(50%);
+  }
+  
+  .image-wrapper.right img {
+    width: 100px;
+    height: 150px;
+  }
+  
+  .container:hover .image-wrapper.left {
+    border: 3px solid black;
+    transform: translateX(-10px);
+    opacity: 0.7;
+  }
+  
+  .container:hover .image-wrapper.right {
+    transform: translateX(10px);
+    opacity: 0.7;
+
+  }
+  
+  .container:hover .image-wrapper.right {
+    align-self: center;
+    position: absolute;
+    top: 18%;
+    right: 35%;
+    opacity: 0.7;
+    border: 3.3px solid black;
+    transform: translate(75%);
+
+  }
+  
+  .btn {
+    position: absolute;
+    width: 130px;
+    display: none;
+    padding: 5px 10px;
+    background-color: #8caf2e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    opacity: 0.7;
+    left: 28%;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 239px;
+    background-color: #e7e9e1;
+  }
+  
+  .btnnn {
+    position: absolute;
+    width: 130px;
+    display: none;
+    padding: 5px 10px;
+    background-color: #8caf2e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    opacity: 0.7;
+    left: 28%;
+  }
+  
+  .container:hover .btnnn {
+    top: 40%;
+    display: block;
+  }
+  
+  .container:hover .btn {
+    display: block;
+    top: 55%;
+  }
+  .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; 
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border:1px solid rgb(64, 145, 226) !important;
+    padding-right: 30px; 
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  input:focus {outline:none!important;}
+  .input-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
